@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  <title> Predict Stress </title>
+<body>
+<div class="login">
+  <h1 style="text-align:center">Stress Prediction</h1>
+  <form action="{{ url_for('predict')}}"method="post">
+    <h6 style="text-align:center;">HR</h3>
+    <p style="text-align:center;"><input type="float" name="HR" required="required" /></p>  
+    <h6 style="text-align:center;">MEDIAN_RR</h3>
+    <p style="text-align:center;"><input type="float" name="MEDIAN_RR" required="required" /></p>
+    <h6 style="text-align:center;">MEAN_RR</h3>
+    <p style="text-align:center;"><input type="float" name="MEAN_RR" required="required" /></p>
+    <h6 style="text-align:center;">RMSSD</h3> 
+    <p style="text-align:center;"><input type="float" name="RMSSD" required="required" /></p>
+    <h6 style="text-align:center;">pNN25</h3> 
+    <p style="text-align:center;"><input type="float" name="pNN25" required="required" /></p>
+    <h6 style="text-align:center;">HF</h3> 
+    <p style="text-align:center;"><input type="float" name="HF" required="required" /></p>
+    <h6 style="text-align:center;">LF</h3> 
+    <p style="text-align:center;"><input type="float" name="LF" required="required" /></p>
+    <h6 style="text-align:center;">HF_LF</h3> 
+    <p style="text-align:center;"><input type="float" name="HF_LF" required="required" /></p>  
+    <h2 style="text-align:center;"></h2>         
+    <p style="text-align:center;"><button type="submit" class="btn btn-primary">Predict</button></p>  
+  </form>   
+  <h2 style="text-align:center;">{{ prediction_text }}</h2>  
+</div>
+{% if prediction %}
+  <div class="row justify-content-md-center mb-4">
+    <h3 class='text-primary'>You are {{ prediction}}</h3>
+
+</div>
+{% endif %}
+</body>
+</html>
