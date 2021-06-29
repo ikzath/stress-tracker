@@ -1,0 +1,46 @@
+.stress {
+  display: grid;
+  place-items: center;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.stressLabel {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.333333px;
+  margin-top: 0;
+  color: red;
+}
+
+.userInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInputText {
+  width: 366px;
+  height: 77px;
+  left: 20px;
+  background: #e7e4e4;
+  border: none;
+  border-radius: 25px;
+  color: rgb(72, 72, 226);
+  font-size: 30px;
+  font-style: bold;
+  padding-left: 20px;
+  margin-top: 18px;
+}
+
+.userInputText:hover {
+  background-color: rgb(72, 72, 218);
+  color: white;
+}
+
+.stress img {
+  margin-top: 30px;
+}

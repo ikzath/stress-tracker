@@ -1,0 +1,16 @@
+.login {
+  display: grid;
+  place-items: center;
+  margin-top: 75px;
+}
+
+.login button {
+  position: relative;
+  margin-top: 30px;
+  width: 240px;
+  height: 48px;
+  background: #c4c4c4;
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+}

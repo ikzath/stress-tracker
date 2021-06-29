@@ -1,0 +1,15 @@
+.noStress {
+  display: grid;
+  place-items: center;
+  margin-top: 200px;
+}
+
+.confetti-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confetti-bottom {
+  display: flex;
+  justify-content: center;
+}

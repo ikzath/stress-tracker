@@ -1,0 +1,60 @@
+.newUser {
+  display: grid;
+  place-items: center;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.newUserLabel {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.333333px;
+  margin-top: 0;
+}
+
+.userInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInputText {
+  width: 336px;
+  height: 67px;
+  left: 20px;
+  top: 160px;
+  background: #e7e4e4;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 20px;
+  font-style: bold;
+  padding-left: 20px;
+  margin-top: 18px;
+}
+
+.userInputPrivacy {
+  display: flex;
+  margin-top: 15px;
+}
+
+.userInoutCheckbox {
+  margin-top: 7px;
+  margin-right: 10px;
+  border-radius: 1px solid red;
+}
+
+.newUser button {
+  position: relative;
+  margin-top: 30px;
+  width: 270px;
+  height: 48px;
+  background: red;
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+}

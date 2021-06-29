@@ -1,0 +1,32 @@
+.activity {
+  display: grid;
+  place-items: center;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.activityLabel {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.333333px;
+  margin-top: 0;
+  color: red;
+}
+
+.activity img {
+  margin-top: 30px;
+}
+
+.activityImg {
+  height: 400px;
+  width: 400px;
+}
+
+.activityImg2 {
+  height: 300px;
+  width: 300px;
+}
