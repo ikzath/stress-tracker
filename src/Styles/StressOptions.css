@@ -1,0 +1,83 @@
+.stress {
+  display: grid;
+  place-items: center;
+  margin-top: -75px;
+}
+
+.stressLabel {
+  font-family: sans-serif;
+  font-size: 22px;
+  margin-left: -90px;
+}
+
+.stressLabel1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: -10px;
+  margin-left: -90px;
+  margin-bottom: -30px;
+}
+
+.userInput {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.userInputText {
+  width: 355px;
+  height: 75px;
+  left: 20px;
+  background: #e7e4e4;
+  border: none;
+  border-radius: 25px;
+  font-size: 25px;
+  font-style: normal;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.userInputText:hover {
+  background-color: rgb(140, 140, 211);
+  color: white;
+}
+
+.stress img {
+  margin-top: 75px;
+}
+
+.profileButton {
+  position: relative;
+  width: 366px;
+  height: 67px;
+  background: rgb(91, 91, 207);
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.imageStyle {
+  width: 140.94px;
+  height: 100.57px;
+  left: 123.33px;
+  top: 141px;
+  margin-bottom: 55px;
+}
+
+.relax {
+  width: 366px;
+  height: 77px;
+  left: 47px;
+  top: 442px;
+  margin-bottom: -30px;
+}
+
+.headerImages1 {
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: -80px;
+}

@@ -11,8 +11,7 @@ import Activity2 from './components/Activity2';
 import Activity3 from './components/Activity3';
 import Breathing from './components/Breathing';
 import FreeWriting from './components/FreeWriting';
-// import StressOptions from './components/StressOptions';
-// import MessageNoStress from './components/MessageNoStress';
+import StressOptions from './components/StressOptions';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignIn from './components/SignIn';
 
@@ -59,7 +58,7 @@ function App() {
          </Route>
 
          <Route path="/options">
-          <StressRelief />
+          <StressOptions />
          </Route>
 
          <Route path="/breathing">

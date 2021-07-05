@@ -9,7 +9,7 @@ function Breathing() {
    
     const history = useHistory();
         const imageClick = () => {
-         history.push('/stress-time')
+         history.push('/options')
       } 
 
     return (

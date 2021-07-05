@@ -17,7 +17,7 @@ function StressRelief() {
     }
 
     const imageClick = () => {
-        history.push('/stress')
+        history.push('/options')
        } 
 
     return (
