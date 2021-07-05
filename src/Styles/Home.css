@@ -27,18 +27,31 @@
 }
 
 .homeTextPara {
-  font-family: Open Sans;
+  font-family: sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 41px;
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: left;
   letter-spacing: -0.333333px;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: -20px;
 }
 
 .home button {
   color: white;
   font-size: 21px;
+  /* font-family: sans-serif;
+  width: 400px; */
+}
+
+.homeHeader {
+  font-family: sans-serif;
+}
+
+.link1 {
+  font-family: sans-serif;
+  width: 400px;
 }

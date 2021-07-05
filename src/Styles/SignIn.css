@@ -19,14 +19,16 @@
   align-items: center;
   letter-spacing: -0.333333px;
   margin-top: 0;
+  margin-bottom: -10px;
 }
 
 .userInput {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: -20px;
   height: 400px;
   font-size: 10px;
+  margin-bottom: -140px;
 }
 
 .userInputText1 {
@@ -51,7 +53,7 @@
 
 .userInputPrivacy {
   display: flex;
-  margin-top: 100px;
+  margin-top: -20px;
   color: blue;
 }
 
@@ -75,24 +77,18 @@
 .newUserLinks {
   margin-top: 0px;
   color: blue;
+  font-size: 20px;
 }
 
 .navButton {
-  /* position: relative; */
-  /* width: -60px; */
-  height: 92px;
-  /* background: red;
-  border-radius: 20px;
-  border: 0px;
-  color: white; */
-  /* font-size: 25px;
-  font-weight: 600; */
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  height: 77px;
+  /* width: -50px; */
+}
+
+.userInputPrivacy {
+  margin-top: -120px;
+  margin-bottom: 0px;
+  margin-left: -160px;
 }
 
 .navButton1 {
@@ -111,9 +107,4 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
-
-.userInputPrivacy {
-  margin-top: 50px;
-  margin-bottom: 30px;
 }

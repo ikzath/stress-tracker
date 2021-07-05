@@ -1,7 +1,6 @@
 .stress {
   display: grid;
   place-items: center;
-  margin-top: 75px;
   margin-bottom: 50px;
 }
 
@@ -10,14 +9,6 @@
   font-size: 27px;
   display: flex;
   align-items: center;
-  margin-top: 0;
-}
-
-.stressLabel1 {
-  font-size: 20px;
-  font-family: sans-serif;
-  margin-top: -10px;
-  margin-left: -40px;
 }
 
 .userInput {

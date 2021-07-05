@@ -1,6 +1,7 @@
 import React from 'react';
 import "../Styles/NoStress.css";
 import Confetti from 'react-dom-confetti';
+import { Link } from "react-router-dom";
 
 
 function NoStress() {
@@ -9,7 +10,7 @@ function NoStress() {
 
     React.useEffect(() => {
         setpageLoad(true)
-    }, [])
+    }, []) 
 
     const config = {
       angle: 360,
@@ -25,15 +26,19 @@ function NoStress() {
       colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
     };
 
+    const smiley = '\uD83D\uDE00';
+
     return (
-        <div>
-            <div className='confetti-top' >
+      <div className="noStress">
+      <div className='confetti-top' >
             <Confetti active={pageLoad} config={config} />
             <Confetti active={pageLoad} config={config} />
-            </div>
-             <div className="noStress">
-             <h3>No stress - add confetti</h3>
-             </div>
+            </div> 
+             <h3>Hooray !!! You are not stressed</h3>
+             <h3>{smiley}</h3>
+             <p>Go out smile and enjoy the rest of your day</p>
+             <Link style={{ fontSize: '24px', fontFamily: 'cursive', color:'red'}} to='/home'>Back to Home</Link>
+             <Link style={{ fontSize: '24px', fontFamily: 'cursive', color:'red'}} to='/hr-tracker'>Heart Rate Tracker</Link>
             <div className='confetti-bottom' >
             <Confetti active={pageLoad} config={config} />
           </div>´    

@@ -7,17 +7,18 @@
 
 .stressLabel {
   font-family: sans-serif;
-  font-size: 27px;
+  font-size: 37px;
   display: flex;
   align-items: center;
   margin-top: 0;
 }
 
-.stressLabel1 {
-  font-size: 20px;
+.stressLabel2 {
+  font-size: 24px;
   font-family: sans-serif;
   margin-top: -10px;
-  margin-left: -40px;
+  margin-bottom: -40px;
+  margin-left: -70px;
 }
 
 .userInput {
@@ -72,10 +73,9 @@
 }
 
 .relax {
-  width: 366px;
+  width: 356px;
   height: 77px;
   left: 47px;
   top: 442px;
   margin-bottom: -30px;
-  /* margin-top: -60px; */
 }

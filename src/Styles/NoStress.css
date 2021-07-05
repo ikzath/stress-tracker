@@ -2,6 +2,7 @@
   display: grid;
   place-items: center;
   margin-top: 200px;
+  font-family: cursive;
 }
 
 .confetti-top {
@@ -12,4 +13,16 @@
 .confetti-bottom {
   display: flex;
   justify-content: center;
+}
+
+.noStress h3 {
+  color: green;
+  font-size: 41px;
+  margin-top: 10px;
+}
+
+.noStress p {
+  color: rgb(179, 71, 179);
+  font-size: 31px;
+  margin-top: 0px;
 }

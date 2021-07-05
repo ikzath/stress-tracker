@@ -4,11 +4,17 @@ import NewUser from './components/NewUser';
 import Profile from './components/Profile';
 import HeartrateTracker from './components/HeartrateTracker';
 import GotStress from './components/GotStress';
-import NoStress from './components/NoStress';
+import NegativeStress from './components/NegativeStress';
+import StressRelief from './components/StressRelief';
 import Activity1 from './components/Activity1';
 import Activity2 from './components/Activity2';
 import Activity3 from './components/Activity3';
+import Breathing from './components/Breathing';
+import FreeWriting from './components/FreeWriting';
+// import StressOptions from './components/StressOptions';
+// import MessageNoStress from './components/MessageNoStress';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SignIn from './components/SignIn';
 
 function App() {    
 
@@ -20,36 +26,56 @@ function App() {
           <Home />
          </Route>
 
-         <Route exact path="/user">
+         <Route path="/user">
           <NewUser />
          </Route>
 
-         <Route exact path="/hr-tracker">
+         <Route path="/hr-tracker">
           <HeartrateTracker />
          </Route>
 
-         <Route exact path="/profile">
+         <Route path="/profile">
           <Profile />
          </Route>
 
-         <Route exact path="/stress">
+         <Route path="/stress">
           <GotStress />
          </Route>
 
-         <Route exact path="/no-stress">
-          <NoStress />
+         <Route path="/no-stress">
+          <NegativeStress />
          </Route>
 
-         <Route exact path="/activity1">
+         <Route path="/activity1">
           <Activity1 />
          </Route>
 
-         <Route exact path="/activity2">
+         <Route path="/activity2">
           <Activity2 />
          </Route>
 
-         <Route exact path="/activity3">
+         <Route path="/activity3">
           <Activity3 />
+         </Route>
+
+         <Route path="/options">
+          <StressRelief />
+         </Route>
+
+         <Route path="/breathing">
+          <Breathing />
+         </Route>
+
+         <Route path="/free-writing">
+          <FreeWriting />
+         </Route>
+
+         <Route path="/stress-time">
+          <StressRelief />
+         </Route>
+
+         <Route path="/sign-in">
+          <SignIn />
          </Route>
          
          <Route exact path="/">
