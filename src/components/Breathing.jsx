@@ -4,9 +4,35 @@ import breath from "../images/breath.png";
 import guru from "../images/guru.png";
 import button from "../images/button.png";
 import { useHistory } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
-function Breathing() {
-   
+const useAudio = url => {
+    const [audio] = useState(new Audio('https://www.mayo.edu/research/-/media/kcms/gbs/research/audio/ten-breath-practice-benzo'));
+    const [playing, setPlaying] = useState(false);
+  
+    const toggle = () => {
+        console.log('audio')
+        setPlaying(!playing); }
+  
+    useEffect(() => {
+        playing ? audio.play() : audio.pause();
+      },
+      [playing]
+    );
+  
+    useEffect(() => {
+      audio.addEventListener('ended', () => setPlaying(false));
+      return () => {
+        audio.removeEventListener('ended', () => setPlaying(false));
+      };
+    }, []);
+  
+    return [playing, toggle];
+  };
+
+function Breathing({ url }) {
+
+   const [playing, toggle] = useAudio(url);
     const history = useHistory();
         const imageClick = () => {
          history.push('/options')
@@ -21,7 +47,7 @@ function Breathing() {
             <div className="header1">
                 <h2>Breathing</h2>
             </div>
-            <img className='audio' src={audio} alt="" />
+            <img onClick={toggle} className='audio' src={audio} alt="" />
             <div className="breathingPara">
                 <p> This simple breathing technique makes you slow down your pace of breathing by having you apply deliberate effort in each breath.<br /><br />
                     You can practice pursed lip breathing at any time. It may be especially useful during activities such as bending, lifting, or stair 

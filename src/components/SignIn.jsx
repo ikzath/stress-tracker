@@ -1,7 +1,6 @@
 import React from 'react';
 import "../Styles/SignIn.css";
 import { Link, useHistory } from "react-router-dom";
-import loginButton from "../images/loginButton.png";
 
 function SignIn() {
 

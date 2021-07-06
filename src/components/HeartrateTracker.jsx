@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import "../Styles/HeartrateTracker.css";
 import { Link, useHistory } from "react-router-dom";
 import axios from 'axios';
-// import SwitchSelector from "react-switch-selector";
 import list from '../DataSet';
 import trackStress from "../images/trackStress.png";
 
@@ -98,7 +97,7 @@ function HeartrateTracker() {
 
     return (
       <div className='hrTracker' onSubmit={postData}>
-        <button onClick={clickHandler} className='hrInputTabButton'>Enter heartrate</button>
+        <button onClick={clickHandler} className='hrInputTabButton'>Heartrate</button>
         <form className="hrTrackerInput">
             <input className='hrInputTab'style={{ backgroundColor: 'rgb(194, 194, 221)'}} type="number" name="HR" placeholder='HR' value={data.HR} onChange={handleChange} required /> 
             <input className='hrInputTab' type="number" name="MEDIAN_RR" placeholder='MEDIAN_RR' value={data.MEDIAN_RR} onChange={handleChange} required /> 

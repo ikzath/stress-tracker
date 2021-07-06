@@ -2,10 +2,11 @@
 from flask import Flask, request, jsonify
 import numpy as np
 import joblib
+from flask.helpers import send_from_directory
 from flask_cors import CORS, cross_origin
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='stress-tracker/build', static_url_path='')
 model = joblib.load('rf_model.pkl')
 CORS(app)
 
@@ -29,6 +30,12 @@ def predict():
     output = prediction[0]
     prediction = output
     return prediction
+
+
+@app.route('/')
+@cross_origin()
+def serve():
+    return send_from_directory(app.static_folder, "index.html")
 
 
 if __name__ == "__main__":

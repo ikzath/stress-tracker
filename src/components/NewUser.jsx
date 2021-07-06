@@ -42,7 +42,6 @@ function NewUser() {
                 <span>By signing in you accept the <a href='/'>Terms of <br /> Service & Privacy Policy</a></span>
             </div>
               <Link className='navButton1' to='/profile'>Register</Link>
-              {/* <img className='navButton' onClick={()=> imageClick} src={register}  alt="" /> */}
               <div className="newUserLinks">
               <p style={{ fontSize: '17px'}} className='userPara'>Already have an account?
               <Link style={{marginLeft: '5px'}} to='/sign-in'>Login</Link>
