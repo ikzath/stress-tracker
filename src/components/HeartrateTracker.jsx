@@ -3,7 +3,6 @@ import "../Styles/HeartrateTracker.css";
 import { Link, useHistory } from "react-router-dom";
 import axios from 'axios';
 import list from '../DataSet';
-import trackStress from "../images/trackStress.png";
 
 
 function HeartrateTracker() {
@@ -12,20 +11,20 @@ function HeartrateTracker() {
   const [results, setResults] = useState(''); 
   
 
-  const options = [
-    {
-      label: "",
-      value: "unsync",
-      selectedBackgroundColor: "red",
-      selectedFontColor: "white"
-    },
-    {
-      label: "SYNC YOUR SMART-WATCH",
-      value: "sync",
-      selectedBackgroundColor: "red",
-      selectedFontColor: "white"
-    }
-  ];
+  // const options = [
+  //   {
+  //     label: "",
+  //     value: "unsync",
+  //     selectedBackgroundColor: "red",
+  //     selectedFontColor: "white"
+  //   },
+  //   {
+  //     label: "SYNC YOUR SMART-WATCH",
+  //     value: "sync",
+  //     selectedBackgroundColor: "red",
+  //     selectedFontColor: "white"
+  //   }
+  // ];
      
   const [data, setData] = useState({ 
     HR: '',
@@ -70,7 +69,7 @@ function HeartrateTracker() {
       const postData = e => { 
         e.preventDefault();        
           axios
-          .post("http://localhost:5000/predict", data, config)
+          .post("https://limitless-wave-49962.herokuapp.com/predict", data, config)
           .then(function (response) {
             const res = response.data;
             setResults(res)
@@ -107,7 +106,7 @@ function HeartrateTracker() {
             <input className='hrInputTab' type="number" name="HF" placeholder='HF' value={data.HF} onChange={handleChange} required /> 
             <input className='hrInputTab' type="number" name="LF" placeholder='LF' value={data.LF} onChange={handleChange} required /> 
             <input className='hrInputTab' type="number" name="HF_LF"  placeholder='HF_LF' value={data.HF_LF} onChange={handleChange} required /> 
-            <input className='hrInputTabButton' onClick={onFormSubmit} type="submit" value="Track" />
+            <input className='hrInputTabButton1' onClick={onFormSubmit} type="submit" value="Track" />
         </form>
     </div>
     );  
