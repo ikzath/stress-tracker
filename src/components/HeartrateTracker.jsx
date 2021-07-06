@@ -64,7 +64,7 @@ function HeartrateTracker() {
   
 
     const config = {
-      headers: {'Access-Control-Allow-Origin': '*'}}
+      headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*'}}
 
       const postData = e => { 
         e.preventDefault();        
