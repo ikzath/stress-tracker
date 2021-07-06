@@ -79,14 +79,14 @@ function HeartrateTracker() {
           })
     };
 
-    // function onFormSubmit(){
-    //     if(results === 'stress'){
-    //       history.push('/stress') 
-    //     }  
-    //     if(results === 'no stress'){
-    //       history.push('/no-stress') 
-    //     }
-    // }
+    function onFormSubmit(){
+        if(results === 'stress'){
+          history.push('/stress') 
+        }  
+        if(results === 'no stress'){
+          history.push('/no-stress') 
+        }
+    }
 
     useEffect(() => {      
       onFormSubmit()
