@@ -11,6 +11,17 @@ model = joblib.load('rf_model.pkl')
 CORS(app)
 
 
+@app.errorhandler(404)
+def not_found(e):
+    return app.send_static_file('index.html')
+
+
+@app.route('/')
+@cross_origin()
+def serve():
+    return send_from_directory(app.static_folder, "index.html")
+
+
 @app.route('/api')
 def hello_world():
     return {
@@ -30,12 +41,6 @@ def predict():
     output = prediction[0]
     prediction = output
     return prediction
-
-
-@app.route('/')
-@cross_origin()
-def serve():
-    return send_from_directory(app.static_folder, "index.html")
 
 
 if __name__ == "__main__":
