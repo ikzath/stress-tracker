@@ -25,7 +25,7 @@ function StressRelief() {
             <div className="headerImages">
                 <img className="headerImages1" src={guru} alt="" />
             </div>     
-          <p className='stressLabel'>If you have a few minutes, <br />please choose one of the <br />following techniques</p>
+          <p className='stressLabel' style={{ marginLeft: '-10px'}} >If you have a few minutes, please <br /> choose one of the following <br />techniques</p>
           <div style={{ marginBottom: '120px'}} className="userInput">
               <button onClick={clickHandler} className='userInputText'>Breathing</button>
               <button onClick={clickHandler2} className='userInputText'>Free-Writing</button>

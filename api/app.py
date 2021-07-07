@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 from flask.helpers import send_from_directory
 from flask_cors import CORS, cross_origin
-
+# venv\Scripts\activate
 
 app = Flask(__name__, static_folder='stress-tracker/build', static_url_path='')
 model = joblib.load('rf_model.pkl')

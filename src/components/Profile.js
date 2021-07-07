@@ -27,12 +27,6 @@ function Profile() {
             <div className="profileInput">
             <label className='labelText' htmlFor="">What's your date of birth?</label>
               <div>
-               {/* <DatePicker
-                  className='datePicker'
-                  selected={startDate}
-                  onChange={(date) => setStartDate(date)}
-                  placeholder='Date of Birth'
-                  /> */}
               <input className='datePicker' type="date"></input>
               </div>
               <label className='labelText' htmlFor="">How tall are you?</label>
@@ -48,12 +42,15 @@ function Profile() {
                 <option className='profileSelectTab' value="">Regularly, I'm fit</option>
               </select>
           </div>
-              <div className='profilePara'>
-              <p >Please synchronize your smartwatch.</p>
+              <div style={{ marginTop: '15px', marginBottom: '15px', marginLeft: '-18px', fontSize:'20px'}}>
+              <p>Please synchronize your smartwatch</p>
               </div>
+              <div>
               <button onClick={clickHandler} style={{backgroundColor: 'red'}} className='profileButton'>Synchronize</button><br />
+              </div>
         </div>
     )
 }
+
 
 export default Profile

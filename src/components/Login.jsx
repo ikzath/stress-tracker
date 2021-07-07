@@ -9,14 +9,14 @@ function Login() {
  
   return (
     <div className="login">
-      <img src={header} style={{ height: '150px', width: '410px'}} alt="stress-tracker" />
+      <img src={header} style={{ height: '150px', width: '370px'}} alt="stress-tracker" />
       {/* <img src={image} alt="stress-tracker" /> */}
         <div className="logintext">
           <h1 style={{ fontFamily:'sans-serif', marginTop: '20px'}}>Create an account</h1>
         </div>
           <div className='header'>
-          <button style={{ backgroundColor: 'red', marginTop: '60px', width: '360px', height: '60px'}}>Sign Up in Google</button>
-          <button style={{ backgroundColor: 'red',  width: '360px', height: '60px'}}>Sign Up with Facebook</button>
+          <button style={{ backgroundColor: 'red', marginTop: '60px', width: '320px', height: '60px'}}>Sign Up in Google</button>
+          <button style={{ backgroundColor: 'red',  width: '320px', height: '60px'}}>Sign Up with Facebook</button>
           </div>
         <span style={{marginTop: '20px', color: 'blue'}}>Already have an account? <Link to='/sign-in' style={{color: 'blue'}}>Login</Link></span>
     </div>

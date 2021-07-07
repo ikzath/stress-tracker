@@ -9,23 +9,7 @@ function HeartrateTracker() {
 
   const history = useHistory();
   const [results, setResults] = useState(''); 
-  
-
-  // const options = [
-  //   {
-  //     label: "",
-  //     value: "unsync",
-  //     selectedBackgroundColor: "red",
-  //     selectedFontColor: "white"
-  //   },
-  //   {
-  //     label: "SYNC YOUR SMART-WATCH",
-  //     value: "sync",
-  //     selectedBackgroundColor: "red",
-  //     selectedFontColor: "white"
-  //   }
-  // ];
-     
+      
   const [data, setData] = useState({ 
     HR: '',
     MEDIAN_RR: '',
@@ -69,7 +53,7 @@ function HeartrateTracker() {
       const postData = e => { 
         e.preventDefault();        
           axios
-          .post("https://limitless-wave-49962.herokuapp.com/predict", data, config)
+          .post("http://localhost:5000/predict", data, config)
           .then(function (response) {
             const res = response.data;
             setResults(res)
@@ -96,7 +80,7 @@ function HeartrateTracker() {
 
     return (
       <div className='hrTracker' onSubmit={postData}>
-        <button onClick={clickHandler} className='hrInputTabButton'>Heartrate</button>
+        <button onClick={clickHandler} className='hrInputTabButton'>Measure Heartrate</button>
         <form className="hrTrackerInput">
             <input className='hrInputTab'style={{ backgroundColor: 'rgb(194, 194, 221)'}} type="number" name="HR" placeholder='HR' value={data.HR} onChange={handleChange} required /> 
             <input className='hrInputTab' type="number" name="MEDIAN_RR" placeholder='MEDIAN_RR' value={data.MEDIAN_RR} onChange={handleChange} required /> 
@@ -106,7 +90,7 @@ function HeartrateTracker() {
             <input className='hrInputTab' type="number" name="HF" placeholder='HF' value={data.HF} onChange={handleChange} required /> 
             <input className='hrInputTab' type="number" name="LF" placeholder='LF' value={data.LF} onChange={handleChange} required /> 
             <input className='hrInputTab' type="number" name="HF_LF"  placeholder='HF_LF' value={data.HF_LF} onChange={handleChange} required /> 
-            <input className='hrInputTabButton1' onClick={onFormSubmit} type="submit" value="Track" />
+            <input className='hrInputTabButton1' onClick={onFormSubmit} type="submit" value="Track Stress" />
         </form>
     </div>
     );  
