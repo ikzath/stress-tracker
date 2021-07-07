@@ -69,7 +69,7 @@ function HeartrateTracker() {
       const postData = e => { 
         e.preventDefault();        
           axios
-          .post("/predict", data, config)
+          .post("https://limitless-wave-49962.herokuapp.com/predict", data, config)
           .then(function (response) {
             const res = response.data;
             setResults(res)

@@ -33,7 +33,7 @@ function Breathing() {
                 or misguided anger because you’ve actually granted yourself the space to let it out. You may even find yourself writing down feelings you weren’t even aware you were experiencing. Remember, you’re human. It’s okay to be upset—give yourself permission to feel the full range of your emotions. 
                 </p>
             </div>
-            <div className="buttonDiv2" style={{ marginTop: '290px'}}>
+            <div className="buttonDiv2" style={{ marginTop: '300px'}}>
             <img onClick={() => imageClick()} className='button2' src={button} alt="" />
             </div>
         </div>
